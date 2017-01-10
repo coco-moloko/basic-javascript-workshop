@@ -130,3 +130,14 @@ function oneToTenWords(number) {
 }
 
 console.log(oneToTenWords());
+
+//Function will print out the number as a list as many times as is the value of the number
+
+function loop3() {
+    for (var i= 1; i <=10; i++) {
+        for (var j = 1; j <= i; j++) {
+            console.log(i);
+        }
+    }
+}
+console.log(loop3());

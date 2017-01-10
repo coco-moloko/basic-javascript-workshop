@@ -182,3 +182,19 @@ function longestWord(string) {
     return word;
 }
 console.log(longestWord("fhdhfslfhlsdk Hello my name is Bob hdhfsdk."))
+
+//Function will return the string with the first letter capitalized in every word
+
+function titleCase(str) {  
+  str = str.toLowerCase().split(' ');
+
+  for(var i = 0; i < str.length; i++){
+    str[i] = str[i].split('');
+    str[i][0] = str[i][0].toUpperCase(); 
+    str[i] = str[i].join('');
+  }
+  return str.join(' ');
+}
+
+console.log(titleCase("I'm a little tea pot, short and stout."));
+console.log(titleCase("HeLLO WORld"));

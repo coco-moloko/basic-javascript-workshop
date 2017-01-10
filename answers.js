@@ -48,3 +48,20 @@ console.log(multiply(false, 5));
 
 //In the last case I used the boolean false, which Javascript thought means 0, 0 * 5 is 0 so the output was 0
 
+//Function will return different outputs based on what the string value is
+
+function numberString(num1, num2, word){
+    if (word === "add"){
+        return num1 + num2;
+    } else if (word === "subtract"){
+        return num1 - num2;
+    } else if (word === "mult"){
+        return num1 * num2;
+    } else if (word === "div"){
+        return num1 / num2;
+    } else {
+        return "0"
+    }
+}
+
+console.log(numberString(8, 4, "add"));

@@ -36,3 +36,15 @@ console.log(sum(7, 35));
 console.log(sum("pizza", 5));
 
 // The total of the last sum is pizza5 because you can't put math on a string
+
+//Function will return the multiplication of two numbers
+
+function multiply(a, b){
+    return a * b;
+}
+console.log(multiply(5, 100));
+console.log(multiply(6, 6));
+console.log(multiply(false, 5));
+
+//In the last case I used the boolean false, which Javascript thought means 0, 0 * 5 is 0 so the output was 0
+

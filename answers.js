@@ -65,3 +65,17 @@ function numberString(num1, num2, word){
 }
 
 console.log(numberString(8, 4, "add"));
+
+//This function will return the string the amount of times you specify
+
+function repeatWord(number, word){
+    var output = "";
+    for (var i = 1; i <= number; i++) {
+    output = output + word;
+    }
+    
+    return output;
+}
+
+console.log(repeatWord(4, "dog"));
+console.log(repeatWord(6, "party"));

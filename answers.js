@@ -153,3 +153,18 @@ function reverse(b) {
 console.log(reverse("hello"));
 console.log(reverse("pizza"));
 console.log(reverse(" "));
+
+//Function will print the factorial of a number
+
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+console.log(factorial(10));
+console.log(factorial(5));
+console.log(factorial(-5));
+
+//Outputs error message with negative numbers
+

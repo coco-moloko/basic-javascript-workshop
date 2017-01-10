@@ -16,3 +16,11 @@ function lastCharacter(word) {
 console.log(lastCharacter("Table"));
 console.log(lastCharacter("Chair Legs"));
 console.log(lastCharacter("Pizza "));
+
+//Function will add a string and a number and return the character at that number
+function stringNumber(word, number){
+    return word[number - 1];
+}
+console.log(stringNumber("banana", 3));
+console.log(stringNumber("pamplemousse", 5));
+console.log(stringNumber("dog chow", 5));

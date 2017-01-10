@@ -24,3 +24,15 @@ function stringNumber(word, number){
 console.log(stringNumber("banana", 3));
 console.log(stringNumber("pamplemousse", 5));
 console.log(stringNumber("dog chow", 5));
+console.log(stringNumber(" ", 3));
+
+//Function will add two numbers together
+
+function sum(a, b){
+    return a + b;
+}
+console.log(sum(3, 5));
+console.log(sum(7, 35));
+console.log(sum("pizza", 5));
+
+// The total of the last sum is pizza5 because you can't put math on a string

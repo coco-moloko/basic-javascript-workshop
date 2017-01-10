@@ -79,3 +79,54 @@ function repeatWord(number, word){
 
 console.log(repeatWord(4, "dog"));
 console.log(repeatWord(6, "party"));
+
+//This function will use a For loop to print out 1-10
+
+function oneToTen(number) {
+    for (var i= 1; i <=10; i++) {
+        console.log(i);
+    }
+}
+
+console.log(oneToTen());
+
+//This function will use a loop to print out 1-10 but as strings
+
+function oneToTenWords(number) {
+    for (var i= 1; i <=10; i++) {
+        switch(i){
+            case 1:
+                console.log("one");
+                break;
+            case 2:
+                console.log("two");
+                break;
+            case 3:
+                console.log("three");
+                break;
+            case 4:
+                console.log("four");
+                break;
+            case 5:
+                console.log("five");
+                break;
+            case 6:
+                console.log("six");
+                break;
+            case 7:
+                console.log("seven");
+                break;
+            case 8:
+                console.log("eight");
+                break;
+            case 9:
+                console.log("nine");
+                break;
+            case 10:
+                console.log("ten");
+                break;
+        }
+    }
+}
+
+console.log(oneToTenWords());

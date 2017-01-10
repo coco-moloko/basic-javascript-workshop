@@ -164,7 +164,21 @@ function factorial(n) {
 }
 console.log(factorial(10));
 console.log(factorial(5));
-console.log(factorial(-5));
 
 //Outputs error message with negative numbers
 
+//Function will print out the longest phrase as a string
+
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i < str.length; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    return word;
+}
+console.log(longestWord("fhdhfslfhlsdk Hello my name is Bob hdhfsdk."))

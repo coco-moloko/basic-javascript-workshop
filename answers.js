@@ -140,4 +140,16 @@ function loop3() {
         }
     }
 }
-console.log(loop3());
+loop3();
+
+//Function will print out the string in reverse
+
+function reverse(b) {
+  var a = '';
+  for (var i = b.length - 1; i >= 0; i--)
+    a += b[i];
+  return a;
+}
+console.log(reverse("hello"));
+console.log(reverse("pizza"));
+console.log(reverse(" "));

@@ -198,3 +198,17 @@ function titleCase(str) {
 
 console.log(titleCase("I'm a little tea pot, short and stout."));
 console.log(titleCase("HeLLO WORld"));
+
+//This function will return the largest number in an array
+
+function arrayMax(arr) {
+  var len = arr.length, max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+};
+console.log(arrayMax( [432, 5435, 7688696] ) );
+console.log(arrayMax( [434434, 89, 3 ] ) );

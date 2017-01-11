@@ -212,3 +212,16 @@ function arrayMax(arr) {
 };
 console.log(arrayMax( [432, 5435, 7688696] ) );
 console.log(arrayMax( [434434, 89, 3 ] ) );
+
+//Finding the truthy value of an array
+
+var arr = [3, 0, "coco", 1, false, true, undefined, "pizza", null, NaN, -77, -1]
+
+function cocoPuffs(initialArr) {
+    return initialArr.filter(function(theCurrentElement){
+        return Boolean(theCurrentElement)
+    })  
+        
+}
+console.log(cocoPuffs(arr));
+console.log( cocoPuffs([4, 5, 'cococo', -1, false]) );
